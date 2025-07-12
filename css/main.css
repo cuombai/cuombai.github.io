@@ -1,3 +1,80 @@
+/* Mobile-first responsive layout */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .dear-mefil-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .love-container {
+    padding: 10px;
+  }
+
+  .poem-section {
+    font-size: 16px;
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .typing-poem {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .proposal-section h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .bear-gif {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .proposal-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 8px;
+    display: inline-block;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .heart-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #back {
+    font-size: 15px;
+    margin-top: 15px;
+    width: 80%;
+    max-width: 200px;
+  }
+
+  .gotcha-content img {
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  #tryAgainBtn {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
 body, html {
       margin: 0;
       padding: 0;
@@ -35,6 +112,83 @@ body, html {
       font-size: 1.5rem;
       background-color: #fefefe;
     }
+/* Mobile-first responsive layout */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .dear-mefil-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .love-container {
+    padding: 10px;
+  }
+
+  .poem-section {
+    font-size: 16px;
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .typing-poem {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .proposal-section h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .bear-gif {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .proposal-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 8px;
+    display: inline-block;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .heart-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #back {
+    font-size: 15px;
+    margin-top: 15px;
+    width: 80%;
+    max-width: 200px;
+  }
+
+  .gotcha-content img {
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  #tryAgainBtn {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
 
     .typing-poem {
     white-space: pre-wrap;
