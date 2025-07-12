@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love Letter to Mefil</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="dear-mefil-header">Dear MEFIL ❤️</div>
+    <div class="love-container">
+    <section id="section1">
+        <div class="section poem-section" onmouseenter="startTyping()" onmouseleave="resetPoem()">
+        <div id="poem-output" class="typing-poem"></div>
+        <div id="poem-source" style="display: none;">
+        You Are My Always;
+
+        Roses are red, Violets are blue, The sun feels warmer When I’m with you.
+
+        You smile, and morning Wakes with delight, Even my shadows Start feeling light.
+
+        Your voice is a song I never outgrow, Like petals that fall But always regrow.
+
+        You laugh, and the world Feels softer, more kind, Like worries forget What they came to find.
+
+        When life turns quiet, Or loud like the sea— Every beat in me Still says: you're home to me.
+
+        So I give you my heart, My words, and my days, In the simplest of lines And the truest of ways.
+        </div>
+
+        </div>
+
+    </section>
+
+  <!-- Section 2 will go here -->
+    <section id="section2" class="proposal-section">
+    <img src="images/kiss-kisses.gif" alt="Bear blowing kisses" class="bear-gif" />
+    <h2 class="proposal-text">I will not do life without you...<br> will you marry me?</h2>
+    <div class="button-group">
+        <button id="yesBtn" class="proposal-btn">Yes</button>
+        <button id="noBtn" class="proposal-btn">No</button>
+    </div>
+
+
+    <div id="heart-popup" class="heart-overlay">
+  <div class="heart-container">
+    <img src="images/puso-heart.gif" alt="Heart animation" id="heart-gif" />
+    
+    <a href="files/LetterToMefil.pdf" download class="ring-button" title="Download Ring PDF">
+      <img src="images/2.svg" alt="Ring icon" />
+    </a>
+    
+    <button id="back" onclick="location.href='willyoumarryme.html'">Back</button>
+  </div>
+</div>
+
+<style>
+    #back {
+    display: block;
+    background-color: brown;
+    color: aliceblue;
+    margin: 10px auto;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    #back:hover {
+        background-color: aqua;
+        color: crimson;
+    }
+    
+</style>
+
+
+    </section>
+
+    </div>
+
+<div id="gotcha-popup" class="gotcha-overlay">
+  <div class="gotcha-content">
+    <img src="images/error.gif" alt="Gotcha!" />
+    <button id="tryAgainBtn">Try Again</button>
+  </div>
+</div>
+
+
+<script src="JS/main.js"></script>
+
+</body>
+</html>

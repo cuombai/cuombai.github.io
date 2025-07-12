@@ -1,0 +1,261 @@
+body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    .header {
+      position: relative;
+      height: 50vh;
+      background: url('your-image.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: red;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      z-index: 1;
+    }
+
+    .header-text {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+    }
+
+    .section {
+      padding: 3rem;
+      font-size: 1.5rem;
+      background-color: #fefefe;
+    }
+
+    .typing-poem {
+    white-space: pre-wrap;
+    font-size: 1.5rem;
+    font-family: 'Brush Script MT', cursive;
+    border-right: none;
+    padding-right: 5px;
+    overflow: hidden;
+    max-width: 100%;
+    line-height: 1.6em;
+    min-height: 6em;
+    }
+
+    @keyframes blink {
+    0%, 100% { border-color: black; }
+    50% { border-color: transparent; }
+    }
+
+   .typing-poem {
+    font-size: 1.5rem;
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.8rem;
+  }
+
+.proposal-section {
+  text-align: center;
+  padding: 3rem;
+  background-color: #fff0f5;
+}
+
+.bear-gif {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.proposal-text {
+  font-size: 2rem;
+  color: #d10000;
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.proposal-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#yesBtn:hover {
+  background-color: lightpink;
+}
+
+/* Heart overlay */
+.heart-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.heart-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideDown 1s ease-out forwards;
+  animation-delay: 2.5s; /* matches GIF duration */
+  opacity: 0;
+}
+
+#heart-gif {
+  width: 180px;
+  animation: none;
+}
+
+.ring-button {
+  display: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.ring-button img {
+  width: 60px;
+  height: 60px;
+}
+
+.ring-button:hover {
+  transform: scale(1.2);
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+}
+
+
+.love-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#section1, #section2 {
+  width: 45%;
+  min-width: 300px;
+  max-height: 500px; 
+  box-sizing: border-box;
+  background-color: #fffdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#section1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.poem-section {
+  height: 500px;
+  width: 100%;
+  max-height: 500px; /* Adjust based on your Section 2 height */
+  overflow-y: hidden;
+  padding-right: 1rem;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (max-width: 800px) {
+  #section1, #section2 {
+    width: 100%;
+  }
+}
+
+#noBtn:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.gotcha-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.gotcha-content {
+  text-align: center;
+}
+
+.gotcha-content img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  margin-bottom: 1.5rem;
+}
+
+#tryAgainBtn {
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#tryAgainBtn:hover {
+  background-color: darkred;
+}
+
+@font-face {
+  font-family: 'Super Adorable';
+  src: url('fonts/super_adorable/SuperAdorable.ttf') format('truetype');
+}
+
+.dear-mefil-header {
+  font-family: 'Super Adorable', cursive;
+  font-size: 5rem;
+  color: pink;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
