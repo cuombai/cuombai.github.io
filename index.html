@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Heart to Yours</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #ffe6e6, #fff0f5);
+      color: #5c0a0a;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .letter-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 192, 203, 0.5);
+      padding: 30px;
+      position: relative;
+    }
+
+    .heartbeat {
+      font-size: 24px;
+      animation: beat 1s infinite;
+      color: red;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    button {
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="letter-container">
+    <h1>To the Keeper of My Heart 💌</h1>
+    <p>
+      My love,  
+      In the silence of stars and the whisper of dawn,  
+      I find you—woven in the warmth of memory and the breath of every hope.  
+      You are the reason poems bloom in quiet places.  
+      May this humble page carry the heartbeat of all I wish to say.
+    </p>
+
+    <div class="heartbeat">❤️</div>
+
+    <button onclick="writeLove()">Reveal More Love</button>
+    <p id="moreLove"></p>
+  </div>
+
+  <script>
+    const poems = [
+      "Your smile turns time into stardust.",
+      "In your eyes, I see forever folded into now.",
+      "Every heartbeat is a whisper of your name.",
+      "Even the moon envies your glow.",
+      "Loving you is my favorite infinite loop."
+    ];
+
+    function writeLove() {
+      const rand = Math.floor(Math.random() * poems.length);
+      document.getElementById("moreLove").textContent = poems[rand];
+    }
+  </script>
+  <section>
+    <div class="apology-container">
+  <h2>To My Love…</h2>
+  <div id="apology-text"></div>
+  <button onclick="revealApology()">Let Me Speak My Heart</button>
+</div>
+
+<style>
+  .apology-container {
+    background: radial-gradient(circle at top left, #fff0f0, #ffe6e6);
+    border: 1px solid #f5c2c2;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 0 25px rgba(255, 182, 193, 0.4);
+    font-family: 'Georgia', serif;
+    color: #721c24;
+    text-align: center;
+  }
+
+  .apology-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  #apology-text {
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: pre-line;
+    margin-top: 20px;
+  }
+
+  .apology-container button {
+    margin-top: 20px;
+    padding: 10px 22px;
+    font-size: 16px;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .apology-container button:hover {
+    background-color: #ad1457;
+  }
+</style>
+
+<script>
+  const apologyLines = [
+    "We have had a tough start,",
+    "and already we question if this is love.",
+    "Love is good.",
+    "Human beings' default setting since the fall is 'bad'.",
+    "This said, it is not supposed to be easy to love someone with all of you,",
+    "knowing there is the possibility they may never see the value of your love.",
+    "You know I believe you and everything you say.",
+    "You said hurtful and heartbreaking things—nonetheless, I forgive you.",
+    "I am not perfect.",
+    "I have done plenty of evil, and as long as I am in this sin-corrupted body,",
+    "evil is part of me and my story.",
+    "It is my past—and good is my future.",
+    "Good days are ahead of us,",
+    "and I want to experience them with you, not without you."
+  ];
+
+  let index = 0;
+  function revealApology() {
+    if (index < apologyLines.length) {
+      document.getElementById("apology-text").textContent += apologyLines[index] + "\n";
+      index++;
+      setTimeout(revealApology, 800); // Delay between lines
+    }
+  }
+</script>
+
+<div class="poem-section">
+  <h3>A Poem for You</h3>
+  <p>
+    I loved you before words found breath,<br>
+    Before silence learned to speak our names.<br>
+    Through tempests and trembling starts,<br>
+    My heart still beats a soft refrain.<br><br>
+
+    I’m sorry for the shadows cast,<br>
+    For words that bruised what should uplift.<br>
+    Yet in my flaws I see our path—<br>
+    Each fault a stone, each grace a gift.<br><br>
+
+    Love is no smooth river's run,<br>
+    It’s wild and deep and truthfully raw.<br>
+    But if you'll walk this shore with me,<br>
+    I swear—I’ll kneel to every flaw.<br><br>
+
+    Let’s build anew from broken light,<br>
+    Stitch the dawn from threads once torn.<br>
+    For good awaits beyond this night,<br>
+    And I choose us—reborn, restored.
+  </p>
+</div>
+
+<style>
+  .poem-section {
+    margin-top: 40px;
+    padding: 25px;
+    background: #fff5f8;
+    border-left: 6px solid #c2185b;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(255, 192, 203, 0.2);
+    font-family: 'Georgia', serif;
+    color: #5c0a0a;
+  }
+
+  .poem-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #c2185b;
+  }
+
+  .poem-section p {
+    font-size: 17px;
+    line-height: 1.8;
+    white-space: pre-line;
+  }
+</style>
+
+
+  </section>
+</body>
+</html>
